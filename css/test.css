@@ -1,0 +1,19 @@
+body{
+    direction: rtl;
+    background-color: #f4f4f4;
+}
+.box{
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    line-height: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+}
+
+.box p a{
+    text-decoration: none;
+    color: red;
+}

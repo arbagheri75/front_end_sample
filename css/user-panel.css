@@ -1,0 +1,288 @@
+/*fonts*/
+@font-face {
+    font-family: Bnazanin;
+    src: url(../fonts/BNazanin.ttf) format('ttf'),
+         url(../fonts/BNazanin.eot) format('eot'),
+         url(../fonts/BNazanin.woff) format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Btitr;
+    src: url(../fonts/BTitrBd.ttf) format('ttf'),
+         url(../fonts/BTitrBd.eot) format('eot'),
+         url(../fonts/BTitrBd.woff) format('woff');
+    font-weight: 600;
+}
+
+/*main styles*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #e5e7eb;
+    font-family: Btitr;
+}
+.main{
+    width: 100%;
+}
+.main-menu{
+    width: 300px;
+    height: 100%;
+    background: #272727;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 55px;
+    z-index: 1;
+}
+.main-menu .items{
+/*    margin-top: 40px;*/
+    margin-right: 20px;
+}
+.main-menu .items li{
+    padding: 30px 0;
+    list-style: none;
+    /*transition: 6s ease;*/
+}
+.main-menu .items li i{
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    color: #c1c1c1;
+    margin: 0 10px 0 15px;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+}
+.main-menu .items li a{
+    text-decoration: none;
+    color: #c1c1c1;
+    font-size: 14px;
+    float: right;
+}
+
+.main-menu .items li:hover a,
+.main-menu .items li:hover i{
+    color: #f3f4f6;
+}
+.main-menu .items li:hover i{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*header*/
+header{
+    width: 100%;
+    background: #f6f6f6;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    direction: rtl;
+    padding: 10px ;
+}
+header .user-image{
+    width: 53%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header .user-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    margin-right: 20px;
+}
+header .user-image h2{
+    margin-right: 12px;
+    font-size: 20px;
+}
+header .notification{
+    width: 45%;
+    padding: 10px 0px 10px 20px;
+}
+header .notification i{
+    position: fixed;
+    left: 0;
+    color: #000;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+header .notification i:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/*main*/
+.content{
+    width: 80%;
+    direction: rtl;
+}
+.content .user-panel{
+    color: #444a53;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 90px 88px 30px 0;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    width: 90%;
+    border-radius: 5px;
+    margin-right: 78px;
+}
+.boxes .box-items{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 32%;
+    padding: 15px 11px 15px 0px;
+}
+.boxes .box-items div{
+    margin-right: 20px;
+    line-height: 40px;
+}
+.boxes .box-items div:not(.last){
+    padding: 5px 0px 5px 82px;
+    border-left: 3px solid rgb(92, 173, 173);
+}
+.boxes .box-items i{
+    width: 70px;
+    height: 60px;
+    border-radius: 30px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+.boxes .box-items:nth-child(1) i{
+    background: rgb(0, 0, 145);
+}
+.boxes .box-items:nth-child(2) i{
+    background: rgb(92, 173, 173);
+}
+.boxes .box-items:nth-child(3) i{
+    background: rgb(128, 128, 192);
+}
+.boxes .box-items h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.boxes .box-items span{
+    font-size: 15px;
+    position: relative;
+    color: #828987;
+}
+/*.all-orders, .support-tickets{*/
+/*    transition: 0.3s;*/
+/*}*/
+.all-orders i:hover, .support-tickets i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.all-orders span:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 145);
+}
+.support-tickets span:hover{
+    cursor: pointer;
+    color: rgb(85, 85, 192);
+}
+
+
+.set-of-orders{
+    width: 90%;
+    margin: 30px 78px 40px 30px;
+    background: #fff;
+    border-radius: 5px;
+}
+.set-of-orders table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.set-of-orders p:not(p.count){
+    font-size: 13px;
+    font-weight: 400;
+}
+.set-of-orders p.count{
+    font-size: 13px;
+    padding-right: 30px;
+}
+thead{
+    border-bottom: 2px solid rgba(193,193,225,0.3);
+    background: rgba(222,222,225,0.4);
+}
+thead td{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px;
+    padding-right: 20px;
+}
+
+thead tr td{
+    padding: 15px 20px 15px 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+tbody tr td{
+    padding: 20px;
+}
+tbody tr:nth-child(even){
+    background: rgba(222, 222, 225, 0.3);
+}
+tbody .show a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0, 120, 179);
+}
+.show{
+    position: relative;
+}
+.show a::before{
+    content: '';
+    width: 53%;
+    height: 73%;
+    border-radius: 30px;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    background: rgba(199, 266, 266, 0.3);
+    transform: scalex(0);
+    transition: transform 0.5s ease;
+}
+.show a:hover:before{
+    transform: scale(1);
+    transform-origin: left;
+}
+.show a span:hover{
+    color: rgb(111, 183, 183);
+}
+
+/*pagination*/
+.pagination{
+    text-align: center;
+    margin: 30px 0 40px 0;
+    color: rgb(49, 49, 49);
+}
+.pagination span{
+    margin-left: 16px;
+}
+.pagination span:hover{
+    color: rgb(92, 173, 173);
+    font-size: 600;
+}
+.pagination span:not(.active):hover, .pagination i:hover{
+    cursor: pointer;
+    color: rgb(0, 120, 170);
+}

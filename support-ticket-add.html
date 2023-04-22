@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/support-ticket-add.css">
+    <title>پنل کاربری</title>
+</head>
+<body>
+    <div class="main">
+        <nav class="main-menu">
+            <ul class="items">
+                <li>
+                    <i class="fa fa-address-card"></i>
+                    <a href="#">پنل کاربری</a>
+                </li>
+                <li>
+                    <i class="fas fa-edit"></i>
+                    <a href="#">ویرایش پروفایل</a>
+                </li>
+                <li>
+                    <i class="fas fa-download"></i>
+                    <a href="#">دانلودها</a>
+                </li>
+                <li>
+                    <i class="fas fa-heart"></i>
+                    <a href="#">علاقه مندی ها</a>
+                </li>
+                <li>
+                    <i class="fas fa-history"></i>
+                    <a href="#">تاریخجه سفارشات</a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="#">ارسال تیکت پشتیبانی</a>
+                </li>
+                <li>
+                    <i class="fas fa-window-close"></i>
+                    <a href="#">خروج</a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <div class="user-image">
+                <img src="images/user-image.png">
+                <h2>سارا بارانی</h2>
+            </div>
+            <div class="notification">
+                <i class="fas fa-bell"></i>
+            </div>
+        </header>
+        <main class="content">
+            <h1 class="user-panel">درج تیکت</h1>
+            <div class="support-box">
+                <form action="#" method="post">
+                    <label for="description">برای درج تیکت لطفا فرم زیر را تکمیل فرمایید:</label>
+                    <div class="first-part">
+                        <label for="support-title-ticket" class="ticket-title">عنوان تیکت:</label>
+                        <input type="text" id="support-title-ticket" name="support-title">
+                        <label for="support-part" class="title-part">عنوان بخش:</label>
+                        <input type="text" id="support-part">
+                    </div>
+                    <div class="messages">
+                        <label for="message-text">متن پیام:</label>
+                        <input type="text" id="message-text">
+                    </div>
+                    <div class="last-part">
+                        <div class="upload-part">
+                            <label for="upload-label">آپلود فایل:</label>
+                            <div>
+                                <i class="fa fa-add"></i>
+                            </div>
+                        </div>
+                        <div class="send-part">
+                            <input type="submit" value="ارسال" class="submit-buttom">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </main>
+
+    </div>
+
+</body>
+</html>
